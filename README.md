@@ -4,7 +4,7 @@
 
 descarga el proyecto:
 
-### `git clone` <br>
+### `git clone https://github.com/SGZ34/virtual-shop.git` <br>
 
 ### `cd virtual-shop` <br>
 
