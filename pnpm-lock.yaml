@@ -14,6 +14,7 @@ specifiers:
   react-dom: ^18.2.0
   react-redux: ^8.0.4
   react-router-dom: ^6.4.3
+  smart-array-filter: ^4.0.0
   vite: ^3.2.0
   yup: ^0.32.11
   yup-es: ^1.0.8
@@ -29,6 +30,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-redux: 8.0.4_nsgh7lqw2e2kb5wanadocemtdi
   react-router-dom: 6.4.3_biqbaboplfbrettd7655fr4n2y
+  smart-array-filter: 4.0.0
   yup: 0.32.11
   yup-es: 1.0.8
 
@@ -881,6 +883,10 @@ packages:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
     dev: false
 
+  /lodash.escaperegexp/4.1.2:
+    resolution: {integrity: sha512-TM9YBvyC84ZxE3rgfefxUWiQKLilstD6k7PTGt6wfbtXF8ixIJLOL3VYyV/z+ZiPLsVxAsKAFVwWlWeb2Y8Yyw==}
+    dev: false
+
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: false
@@ -1103,6 +1109,12 @@ packages:
     resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==}
     hasBin: true
     dev: true
+
+  /smart-array-filter/4.0.0:
+    resolution: {integrity: sha512-pAU9bDDanXvtF9D/dcWwIZn+yOg26AyD5jhFDECPs+vNZolaz6xRrHVJzCXqEtmY9woeGcS//+D9ot417PXxsQ==}
+    dependencies:
+      lodash.escaperegexp: 4.1.2
+    dev: false
 
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}

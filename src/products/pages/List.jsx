@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { parse } from "query-string";
 import { CardProduct } from "../../components";
 import { useProducts } from "../../contexts";
+import { filterArray } from "../../helpers";
 
 export const List = () => {
   const [valueToSearch, setValueToSearch] = useState("");
@@ -22,12 +23,7 @@ export const List = () => {
   };
 
   const productsFiltered = () => {
-    const filtered = products.filter(
-      (p) =>
-        p.title.toLocaleLowerCase().includes(q.toLocaleLowerCase()) ||
-        p.brand.toLocaleLowerCase().includes(q.toLocaleLowerCase())
-    );
-
+    const filtered = filterArray(products, q);
     return filtered.length > 0 ? (
       filtered.map((p) => <CardProduct product={p} key={p.id} />)
     ) : (

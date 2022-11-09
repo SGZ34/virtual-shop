@@ -552,6 +552,11 @@ body {
 .btn-send:hover {
   background: #267191;
 }
+
+.star {
+  color: #e5cf0e;
+}
+
 @keyframes cardAnimation {
   from {
     opacity: 0;

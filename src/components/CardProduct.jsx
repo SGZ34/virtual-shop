@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { calculateDiscount } from "../helpers";
+import { calculateDiscount, generateStars } from "../helpers";
 export const CardProduct = ({ product }) => {
   if (product.stock === 0) return <></>;
+
   return (
     <Link to={`/products/${product?.id}`} className="card-product">
       <img src={`${product?.thumbnail}`} alt={`${product?.title}`} />
@@ -32,7 +33,9 @@ export const CardProduct = ({ product }) => {
         </div>
         <div className="section-card">
           <h4>Calificación</h4>
-          <p>{`${Math.round(product?.rating)}/5`}</p>
+          <p>
+            <span>{generateStars(product?.rating)}</span>
+          </p>
         </div>
       </div>
       <div className="btn-container">

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 import { useCart, useProducts } from "../../contexts";
-import { calculateDiscount } from "../../helpers";
+import { calculateDiscount, generateStars } from "../../helpers";
 import { setSuccess } from "../../store/slices";
 
 export const Product = () => {
@@ -75,7 +75,7 @@ export const Product = () => {
         </div>
         <div className="section-text-product">
           <h4>Calificación</h4>
-          <p>{Math.round(product?.rating)}/5</p>
+          <p>{generateStars(product?.rating)}</p>
         </div>
         <button className="add-to-cart" onClick={() => add(product)}>
           Añadir al carrito
